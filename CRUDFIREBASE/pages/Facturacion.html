@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Factura</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/estilocompleto.css">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="../js/factura.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+<script src="../js/conexion.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-6">
+						<h2>Facturar</h2>
+					</div>
+					<div class="col-sm-6 ">
+                        
+						<a href="../index.html" class="btn btn-danger" ><i class="material-icons">&#xE166;</i> <span>cancerlar</span></a>
+                        <input type="button" class="btn btn-success" value="Grabar factura" onclick="generar()" >
+
+
+					</div>
+                </div>
+            </div>
+            <br>
+            <table class="table">
+              
+             
+                <thead>
+                <tr>
+                  
+                    <td scope="col">Codigo Producto</td>
+                    <td scope="col">Cantidad</td>
+                    <td scope="col">precio</td>   
+                    <br><td><input type="text" placeholder="cedula cliente" id="cedulacliente"></td>
+                    <td><input type="text" placeholder="factura #" id="facturaid"></td>
+                
+                  </tr>
+                </thead>
+                  <tbody>
+             
+                
+                    <tr>
+                   <td><input type="text" placeholder="codigo producto" id="idp"><br></td>
+                   <td><input type="number" placeholder="cantidad"></td>
+                   <td><input type="text" disabled> </td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="codigo producto" id="idp2"><br></td>
+                    <td><input type="number" placeholder="cantidad"></td>
+                    <td><input type="text" disabled> </td>
+                 </tr>
+                 <tr>
+                    <td><input type="text" placeholder="codigo producto" id="idp3"><br></td>
+                    <td><input type="number" placeholder="cantidad"></td>
+                    <td><input type="text" disabled> </td>
+                 </tr>
+            </tbody>
+         
+                </table>
+                </div>
+     
+</body>
+</html>                                		                            
